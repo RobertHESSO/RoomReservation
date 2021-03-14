@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RoomReservation</string>
+    <string name="textView2">Room Reservation</string>
+    <string name="email">Email Address</string>
+    <string name="Password3">Password</string>
+    <string name="button4">SIGN IN</string>
+</resources>
