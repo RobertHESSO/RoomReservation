@@ -35,8 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.textView3:
                 startActivity(new Intent(this,RegisterUser.class));
                 break;
-            case R.id.button4:
-                startActivity(new Intent(this,Search.class));
+
 
         }
     }
