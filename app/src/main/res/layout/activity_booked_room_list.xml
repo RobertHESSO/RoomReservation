@@ -68,7 +68,7 @@
             android:id="@+id/buttonCHangeRoomList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#0ED6B9"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="Change"
             android:textAlignment="center" />
 

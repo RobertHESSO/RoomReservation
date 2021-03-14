@@ -12,7 +12,7 @@
         android:layout_height="110dp"
         android:layout_marginStart="72dp"
         android:layout_marginTop="320dp"
-        android:backgroundTint="#0ED6B9"
+        android:backgroundTint="?attr/colorPrimary"
         android:text="Room List"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +23,7 @@
         android:layout_height="110dp"
         android:layout_marginStart="216dp"
         android:layout_marginTop="320dp"
-        android:backgroundTint="#0ED6B9"
+        android:backgroundTint="?attr/colorPrimary"
         android:text="Guest Bocking List"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,7 +34,7 @@
         android:layout_height="110dp"
         android:layout_marginStart="216dp"
         android:layout_marginTop="184dp"
-        android:backgroundTint="#0ED6B9"
+        android:backgroundTint="?attr/colorPrimary"
         android:text="Add New Guest"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -43,7 +43,7 @@
         android:id="@+id/textViewMainMenu"
         android:layout_width="166dp"
         android:layout_height="39dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="88dp"
         android:layout_marginEnd="120dp"
         android:text="Main Menu"
         android:textAlignment="center"
@@ -57,7 +57,7 @@
         android:layout_height="110dp"
         android:layout_marginStart="72dp"
         android:layout_marginTop="184dp"
-        android:backgroundTint="#0ED6B9"
+        android:backgroundTint="?attr/colorPrimary"
         android:text="Add Room"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
