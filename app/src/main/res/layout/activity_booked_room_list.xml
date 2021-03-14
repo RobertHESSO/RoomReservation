@@ -21,7 +21,7 @@
         android:layout_width="300dp"
         android:layout_height="412dp"
         android:layout_marginTop="204dp"
-        android:background="@color/white"
+        android:background="#FFFFFF"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -33,36 +33,46 @@
             android:layout_width="match_parent"
             android:layout_height="38dp"
             android:text="Room Type"
-            android:textSize="18sp" />
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/TextView2RoomType"
             android:layout_width="match_parent"
-            android:layout_height="38dp" />
+            android:layout_height="38dp"
+            android:text="Double Room" />
 
         <TextView
             android:id="@+id/textViewRoomNumberRoomList"
             android:layout_width="match_parent"
             android:layout_height="38dp"
             android:text="Room Number"
-            android:textSize="18sp" />
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView2RoomNumber"
             android:layout_width="match_parent"
-            android:layout_height="38dp" />
+            android:layout_height="38dp"
+            android:text="5" />
 
         <TextView
             android:id="@+id/textViewAmountRoomList"
             android:layout_width="match_parent"
             android:layout_height="38dp"
             android:text="Amount"
-            android:textSize="18sp" />
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView2AmountRoomList"
             android:layout_width="match_parent"
-            android:layout_height="38dp" />
+            android:layout_height="38dp"
+            android:text="350" />
+
+        <TextView
+            android:id="@+id/textViewRoomUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Room Update"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/buttonCHangeRoomList"
