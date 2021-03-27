@@ -12,7 +12,7 @@
         android:layout_height="42dp"
         android:layout_marginStart="240dp"
         android:layout_marginTop="128dp"
-        android:text="Booked"
+        android:text="@string/checkBoxBooked"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,46 +32,46 @@
             android:id="@+id/textViewRoomTypeRoomList"
             android:layout_width="match_parent"
             android:layout_height="38dp"
-            android:text="Room Type"
+            android:text="@string/textViewRoomTypeRoomList"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/TextView2RoomType"
             android:layout_width="match_parent"
             android:layout_height="38dp"
-            android:text="Double Room" />
+            android:text="@string/TextView2RoomType" />
 
         <TextView
             android:id="@+id/textViewRoomNumberRoomList"
             android:layout_width="match_parent"
             android:layout_height="38dp"
-            android:text="Room Number"
+            android:text="@string/textViewRoomNumberRoomList"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView2RoomNumber"
             android:layout_width="match_parent"
             android:layout_height="38dp"
-            android:text="5" />
+            android:text="@string/textView2RoomNumber" />
 
         <TextView
             android:id="@+id/textViewAmountRoomList"
             android:layout_width="match_parent"
             android:layout_height="38dp"
-            android:text="Amount"
+            android:text="@string/textViewAmountRoomList"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView2AmountRoomList"
             android:layout_width="match_parent"
             android:layout_height="38dp"
-            android:text="350" />
+            android:text="@string/textView2AmountRoomList" />
 
         <TextView
             android:id="@+id/textViewRoomUpdate"
             android:layout_width="match_parent"
             android:layout_height="38dp"
-            android:text="Room Update"
+            android:text="@string/textViewRoomUpdate"
             android:textSize="24sp" />
 
         <Button
@@ -79,7 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="?attr/colorPrimary"
-            android:text="Change"
+            android:text="@string/buttonCHangeRoomList"
             android:textAlignment="center" />
 
     </LinearLayout>
@@ -101,7 +101,7 @@
         android:layout_height="42dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="128dp"
-        android:text="Remaining "
+        android:text="@string/checkBoxRemaining"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

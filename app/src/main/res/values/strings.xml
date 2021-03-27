@@ -1,7 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <resources>
-    <string name="app_name">RoomReservation</string>
-    <string name="textView2">Room Reservation</string>
-    <string name="email">Email Address</string>
+
+    //Main Activity
+    <string name="RoomReservation">Room Reservation</string>
+    <string name="email">Email Adress</string>
     <string name="Password3">Password</string>
     <string name="button4">SIGN IN</string>
+    <string name="textView3">Register</string>
+    <string name="textView4">Forgot Password</string>
+
+    //Register user
+    <string name="textView">Registration</string>
+    <string name="HotelName">Hotel Name</string>
+    <string name="tEmailAdressR">Email</string>
+    <string name="PasswordR">Password</string>
+    <string name="PasswordR2">Password Confirmation</string>
+    <string name="buttonR">SIGN UP</string>
+
+    //Forgot Password
+    <string name="TextViewPassword">New Password</string>
+    <string name="editTextEmailNewPassword">Email</string>
+    <string name="editTextPasswordNewPassword">Password</string>
+    <string name="editTextPasswordConfirmationNewPassword">Password Confirmation</string>
+    <string name="buttonSend">SEND</string>
+
+    //MainMenu
+    <string name="AllRoomListButton">Room List</string>
+    <string name="GuestBockingListButton">Guest Bocking List</string>
+    <string name="AddNewGuestButton">Add New Guest</string>
+    <string name="textViewMainMenu">Main Menu</string>
+    <string name="AddRoomButton">Add Room</string>
+
+    //RoomList
+    <string name="textViewRoomTypeRoomList">Room Type</string>
+    <string name="TextView2RoomType">Double</string>
+    <string name="textViewRoomNumberRoomList">Room Number</string>
+    <string name="textView2RoomNumber">5</string>
+    <string name="textViewAmountRoomList">Amount</string>
+    <string name="textView2AmountRoomList">350</string>
+    <string name="textViewRoomUpdate">Room Update</string>
+    <string name="buttonCHangeRoomList">Change</string>
+    <string name="checkBoxBooked">Booked</string>
+    <string name="checkBoxRemaining">Remaining</string>
+
+    //AddRoom
+    <string name="hasTV">TV</string>
+    <string name="textViewAddRoom">Add Room</string>
+    <string name="editTextTextPersonType">Type</string>
+    <string name="editTextNumberRoomNumber">Room Number</string>
+    <string name="editTextNumberDecimalAmount">Amount</string>
+    <string name="HasWifi">Wifi</string>
+    <string name="AddButton">Add</string>
+
+    //Add Guest
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="CheckIn">Check-In</string>
+    <string name="CheckOut">Check-Out</string>
+    <string name="NumberOfGuests">Number of Guests</string>
+    <string name="SubmitButton">Submit</string>
+
+
 </resources>

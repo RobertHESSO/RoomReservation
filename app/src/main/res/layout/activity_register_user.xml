@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="265dp"
         android:layout_height="70dp"
-        android:text="Registration"
+        android:text="@string/textView"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,7 +27,7 @@
         android:layout_marginBottom="360dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Hotel Name"
+        android:text="@string/HotelName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.467"
@@ -41,7 +41,7 @@
         android:layout_marginBottom="296dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="Email"
+        android:text="@string/tEmailAdressR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -52,7 +52,7 @@
         android:layout_marginEnd="108dp"
         android:layout_marginBottom="228dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/PasswordR"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -64,7 +64,7 @@
         android:layout_marginEnd="108dp"
         android:layout_marginBottom="156dp"
         android:ems="10"
-        android:hint="Password Confirmation"
+        android:hint="@string/PasswordR2"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -77,7 +77,7 @@
         android:layout_marginEnd="128dp"
         android:layout_marginBottom="68dp"
         android:backgroundTint="?attr/colorPrimary"
-        android:text="SIGN UP"
+        android:text="@string/buttonR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.733"
