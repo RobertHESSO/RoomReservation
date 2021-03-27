@@ -16,7 +16,7 @@ public abstract class AppDatabase extends RoomDatabase {
 
     private static final String DATABASE_NAME = "RoomReservation-Database";
 
-    public abstract
+    //public abstract
 
 
 }

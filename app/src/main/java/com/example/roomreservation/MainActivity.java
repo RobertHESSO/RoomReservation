@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
 
+    private TextView passwordforgott;
     private TextView register;
     private Button login;
 
@@ -20,7 +21,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        passwordforgott = (TextView) findViewById(R.id.textView4);
+        passwordforgott.setOnClickListener(this);
 
         register = (TextView) findViewById(R.id.textView3);
         register.setOnClickListener(this);
@@ -35,8 +37,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.textView3:
                 startActivity(new Intent(this,RegisterUser.class));
                 break;
-
-
+            case R.id.textView4:
+                startActivity(new Intent(this, ForgotPassword.class));
+                break;
+            case R.id.button4:
+                startActivity(new Intent(this, MainMenu.class));
         }
     }
 }
