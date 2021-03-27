@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
 
+    <string name="app_name">RoomReservation</string>
+
     //Main Activity
     <string name="RoomReservation">Room Reservation</string>
     <string name="email">Email Adress</string>
