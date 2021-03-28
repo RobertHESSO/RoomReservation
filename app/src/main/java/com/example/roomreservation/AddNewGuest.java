@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-public class AddNewGuest extends AppCompatActivity implements View.OnClickListener, DatePickerDialog.OnDateSetListener  {
+public class AddNewGuest extends AppCompatActivity implements View.OnClickListener {
 
     private DatePickerDialog datePickerDialog;
     private TextView checkIn;
@@ -27,7 +27,41 @@ public class AddNewGuest extends AppCompatActivity implements View.OnClickListen
         setContentView(R.layout.activity_add_new_guest);
 
         checkIn = findViewById(R.id.CheckIn);
-        checkIn.setOnClickListener(this);
+        checkIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Calendar calendar = Calendar.getInstance();
+                int year = calendar.get(Calendar.YEAR);
+                int month = calendar.get(Calendar.MONTH);
+                int day = calendar.get(Calendar.DAY_OF_MONTH);
+                datePickerDialog = new DatePickerDialog(AddNewGuest.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int day, int month, int year) {
+                        checkIn.setText(day + "-" + month + "-" + year);
+                    }
+
+                },year,month,day);
+                datePickerDialog.show();
+            }
+        });
+
+        checkOut = findViewById(R.id.CheckOut);
+        checkOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Calendar calendar = Calendar.getInstance();
+                int year = calendar.get(Calendar.YEAR);
+                int month = calendar.get(Calendar.MONTH);
+                int day = calendar.get(Calendar.DAY_OF_MONTH);
+                datePickerDialog = new DatePickerDialog(AddNewGuest.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int day, int month, int year) {
+                        checkOut.setText(day + "-" + month + "-" + year);
+                    }
+                },year,month,day);
+                datePickerDialog.show();
+            }
+        });
 
         button = (Button) findViewById(R.id.SubmitButton);
         button.setOnClickListener(this);
@@ -41,26 +75,18 @@ public class AddNewGuest extends AppCompatActivity implements View.OnClickListen
             case R.id.SubmitButton:
                 startActivity(new Intent(this, MainMenu.class));
                 break;
-            case R.id.CheckIn:
-                showDatePickerDialog();
-                break;
-            case R.id.CheckOut:
-               // showDatePickerDialog();
-                break;
+
         }
     }
 
-    public void showDatePickerDialog() {
-        DatePickerDialog datePickerDialog = new DatePickerDialog(this,this,
-                Calendar.getInstance().get(Calendar.YEAR),
-                Calendar.getInstance().get(Calendar.MONTH),
-                Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
-        datePickerDialog.show();
-    }
 
-    @Override
-    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-        String date = month + "/" + dayOfMonth + "/" + year;
-        checkIn.setText(date);
-    }
+
+
+
+
+
+
+
+
+
 }
