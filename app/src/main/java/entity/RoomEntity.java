@@ -31,7 +31,7 @@ public class RoomEntity {
     private boolean booked;
 
     @ColumnInfo(name = "ReservationID")
-    private int reservationID;
+    private Long reservationID;
 
     @Ignore
     public RoomEntity() {
@@ -78,9 +78,9 @@ public class RoomEntity {
 
     public void setBooked(boolean booked) {this.booked = booked; }
 
-    public int getReservationID() {return reservationID; }
+    public Long getReservationID() {return reservationID; }
 
-    public void setReservationID(int reservationID) { this.reservationID = reservationID; }
+    public void setReservationID(Long reservationID) { this.reservationID = reservationID; }
 
 
 
