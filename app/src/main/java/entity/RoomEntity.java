@@ -3,6 +3,7 @@ package entity;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "rooms")
@@ -32,6 +33,7 @@ public class RoomEntity {
     @ColumnInfo(name = "ReservationID")
     private int reservationID;
 
+    @Ignore
     public RoomEntity() {
 
     }
@@ -47,6 +49,14 @@ public class RoomEntity {
     public Long getId(){return id; }
 
     public void setId(Long id) { this.id = id; }
+
+    public int getRoomNumber() {
+        return roomNumber;
+    }
+
+    public void setRoomNumber(int roomNumber) {
+        this.roomNumber = roomNumber;
+    }
 
     public String getType() {return type; }
 
@@ -69,6 +79,10 @@ public class RoomEntity {
     public void setBooked(boolean booked) {this.booked = booked; }
 
     public int getReservationID() {return reservationID; }
+
+    public void setReservationID(int reservationID) { this.reservationID = reservationID; }
+
+
 
 
     public boolean equals(Object obj) {

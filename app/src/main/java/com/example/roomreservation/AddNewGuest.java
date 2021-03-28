@@ -25,7 +25,9 @@ public class AddNewGuest extends AppCompatActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_guest);
+
         checkIn = findViewById(R.id.CheckIn);
+        checkIn.setOnClickListener(this);
 
         button = (Button) findViewById(R.id.SubmitButton);
         button.setOnClickListener(this);
@@ -43,7 +45,7 @@ public class AddNewGuest extends AppCompatActivity implements View.OnClickListen
                 showDatePickerDialog();
                 break;
             case R.id.CheckOut:
-                showDatePickerDialog();
+               // showDatePickerDialog();
                 break;
         }
     }
@@ -58,7 +60,7 @@ public class AddNewGuest extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-        String date = "month/day/year: " + month + "/" + dayOfMonth + "/" + year;
+        String date = month + "/" + dayOfMonth + "/" + year;
         checkIn.setText(date);
     }
 }
