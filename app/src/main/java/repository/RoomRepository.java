@@ -33,7 +33,7 @@ public class RoomRepository {
         return AppDatabase.getInstance(context).roomDao().getAll();
     }
 
-    public void insert (final RoomEntity room, OnAsyncEventListener callback, Context context) {
+   /* public void insert (final RoomEntity room, OnAsyncEventListener callback, Context context) {
         new CreateRoom(context, callback).execute(room);
     }
 
@@ -43,6 +43,6 @@ public class RoomRepository {
 
     public void delete(final RoomEntity room, OnAsyncEventListener callback, Context context) {
         new DeleteRoom(context, callback).execute(room);
-    }
+    } */
 
 }
