@@ -1,12 +1,14 @@
-package com.example.roomreservation;
-
-import androidx.appcompat.app.AppCompatActivity;
+package ui;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.roomreservation.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -35,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.textView3:
-                startActivity(new Intent(this,RegisterUser.class));
+                startActivity(new Intent(this, RegisterUser.class));
                 break;
             case R.id.textView4:
                 startActivity(new Intent(this, ForgotPassword.class));

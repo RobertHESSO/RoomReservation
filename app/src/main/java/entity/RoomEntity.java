@@ -3,10 +3,24 @@ package entity;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.ForeignKey;
 import androidx.room.Ignore;
+import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "rooms")
+@Entity(tableName = "rooms",
+        foreignKeys =
+        @ForeignKey(
+                entity = ReservationEntity.class,
+                parentColumns = "Id",
+                childColumns = "reservationID",
+                onDelete = ForeignKey.CASCADE
+        ),
+        indices = {
+        @Index(
+                value = {"reservationID"}
+        )}
+)
 public class RoomEntity {
 
     @PrimaryKey(autoGenerate = true)

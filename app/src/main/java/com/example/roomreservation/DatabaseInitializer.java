@@ -41,10 +41,16 @@ public class DatabaseInitializer {
         }
 
         @Override
-        protected Void doInBackground(Void... voids) {
+        protected Void doInBackground(final Void... voids) {
+            populateWithTestData(database);
             return null;
         }
+
+
+
     }
+
+
 
 
 }

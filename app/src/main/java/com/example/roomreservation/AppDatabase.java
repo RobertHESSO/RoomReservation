@@ -47,7 +47,7 @@ public abstract class AppDatabase extends RoomDatabase {
     private static AppDatabase buildDatabase(final Context appContext) {
         Log.i(TAG, "Database will be initialized.");
         return Room.databaseBuilder(appContext, AppDatabase.class, DATABASE_NAME)
-                .addCallback(onCreate(db) {
+                .addCallback(onCreate(db) -> {
             super.onCreate(db);
             Executors.newSingleThreadExecutor().execute(() -> {
                 AppDatabase database = AppDatabase.getInstance(appContext);
