@@ -4,8 +4,6 @@ import android.content.Context;
 
 import androidx.lifecycle.LiveData;
 
-import com.example.roomreservation.AppDatabase;
-
 import java.util.List;
 
 import entity.RoomEntity;
